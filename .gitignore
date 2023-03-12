@@ -1,0 +1,7 @@
+# Python
+__pycache__
+
+# data
+data*
+
+dwh.cfg

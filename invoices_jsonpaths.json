@@ -1,0 +1,8 @@
+{
+    "jsonpaths": [
+        "$.customerid",
+        "$.country",
+        "$.invoicedate",
+        "$.invoiceno"
+      ]
+  }

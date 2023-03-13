@@ -1,3 +1,5 @@
+# Data Ingestion Pipeline for Amazon Redshift
+
 # Introduction
 A UK based online retail shop has grown and increased their sales/purchases and decided to move their data and processes onto the cloud.
 Their json-formatted data resides in s3 directory, consists of Invoices and Items.

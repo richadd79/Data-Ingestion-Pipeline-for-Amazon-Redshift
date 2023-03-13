@@ -48,7 +48,7 @@ staging_invoices_copy = ("""COPY staging_invoices
                             """).format(config['S3']['INVOICES_DATA'], config['IAM_ROLE']['ARN'], config['S3']['INVOICES_JSONPATH'])
 
 
-items_invoices_copy = ("""COPY staging_items
+staging_items_copy = ("""COPY staging_items
                             FROM {}
                             iam_role {}
                             FORMAT AS json 'auto';
@@ -76,7 +76,7 @@ items_table_insert = ("""INSERT INTO items (stockCode,description,unitprice,quan
 
 create_table_queries = [staging_invoices_table_create, staging_items_table_create, invoices_table_create, items_table_create]
 drop_table_queries = [staging_invoices_table_drop, staging_items_table_drop, imvoices_table_drop, items_table_drop]
-copy_table_queries = [staging_invoices_copy, items_invoices_copy]
+copy_table_queries = [staging_invoices_copy, staging_items_copy]
 insert_table_queries = [invoices_table_insert,items_table_insert]
 
 

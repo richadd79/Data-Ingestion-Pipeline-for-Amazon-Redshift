@@ -20,11 +20,11 @@ which are STAGING_INVOICES and STAGING_ITEMS.
 
 # ETL Pipeline
 This is how the ETL pipeline for Redshift works. The ETL pipeline reads the json-formatted invoices and items data from the S3 Bucket, 
-into defined staging tables in Redshift, then proceeds to process it and loads then in their respective analytical tables.
+into defined staging tables in Redshift, then proceeds to process it and loads them into their respective analytical tables.
 
 
 # How to Run
-First to be able to run this project, a config file needs to be in place as Infrastructure As Code(IAC).
+Firstly, to run this project a config file needs to be in place as Infrastructure As Code(IAC).
 With this configuration contains Cluster details, IAM_ROLE and S3 Bucket directories to the data and jsonpaths.
 This IAC file is not included in this repo, but below is the format used
      
